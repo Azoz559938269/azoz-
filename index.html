@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>تطبيق أبو عزة</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+<div class="screen" id="startPage">
+  <h1 class="title">مرحباً بكم في تطبيق أبو عزة</h1>
+  <button class="btn main" onclick="startQuiz()">ابدأ الأسئلة</button>
+</div>
+
+<div class="screen" id="q1">
+  <h2>من أفضل أستاذ عندك؟</h2>
+  <div class="options" id="opts1">
+    <button class="btn opt" onclick="answer(1,0)">أستاذ عبدالله الطلحي</button>
+    <button class="btn opt" onclick="answer(1,1)">فهد البدنية</button>
+    <button class="btn opt" onclick="answer(1,2)">أنس القرشي</button>
+  </div>
+  <p class="error" id="err1"></p>
+  <button class="reset" id="reset1" onclick="resetAll()">أعد من جديد</button>
+</div>
+
+
+<div class="screen" id="q2">
+  <h2>ما أفضل حصة عندك؟</h2>
+  <div class="options" id="opts2">
+    <button class="btn opt" onclick="answer(2,0)">الحاسب</button>
+    <button class="btn opt" onclick="answer(2,1)">البدنية</button>
+    <button class="btn opt" onclick="answer(2,2)">الرياضيات</button>
+  </div>
+  <p class="error" id="err2"></p>
+  <button class="reset" id="reset2" onclick="resetAll()">أعد من جديد</button>
+</div>
+
+<div class="screen" id="q3">
+  <h2>كم تقيم أستاذ عبدالله من 10؟</h2>
+  <div class="options" id="opts3">
+    <!-- أعرِض الخيارات بشكل مرتب -->
+    <div class="ratingRow">
+      <button class="btn opt small" onclick="answer(3,1)">1</button>
+      <button class="btn opt small" onclick="answer(3,2)">2</button>
+      <button class="btn opt small" onclick="answer(3,3)">3</button>
+      <button class="btn opt small" onclick="answer(3,4)">4</button>
+      <button class="btn opt small" onclick="answer(3,5)">5</button>
+    </div>
+    <div class="ratingRow">
+      <button class="btn opt small" onclick="answer(3,6)">6</button>
+      <button class="btn opt small" onclick="answer(3,7)">7</button>
+      <button class="btn opt small" onclick="answer(3,8)">8</button>
+      <button class="btn opt small" onclick="answer(3,9)">9</button>
+      <button class="btn opt small" onclick="answer(3,10)">10</button>
+    </div>
+  </div>
+  <p class="error" id="err3"></p>
+  <button class="reset" id="reset3" onclick="resetAll()">أعد من جديد</button>
+</div>
+
+<div class="screen" id="win">
+  <div class="winBox">
+    <h1>كفووووو 🎉</h1>
+    <h2>فزت معانا بالطالب المميز لأستاذ عبدالله الطلحي</h2>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
